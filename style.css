@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: white;
+   font-size: 40px;
+}
+.section-1{
+    background: rgb(242, 222, 222);
+}
+.section-1 .container-1{
+    max-width: 980px;
+    width: 95%;
+    margin: 44px auto;
+    display: flex;
+    gap: 10px;
+}
+.section-1 .container-1 .card{
+    height: 300px;
+    width: 300px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 .container-1 .card-red{
+    background-color: red;
+}
+.section-1 .container-1 .card-blue{
+    background-color: blue;
+}
+.section-1 .container-1 .card-green{
+    background-color: green;
+}
+
+
+.section-2{
+    background: rgb(171, 122, 122);
+}
+.section-2 .container-1{
+    max-width: 980px;
+    width: 95%;
+    margin: 44px auto;
+    display: flex;
+    gap: 10px;
+}
+.section-2 .container-1 .card{
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.section-2 .container-1 .card-red{
+    background-color: red;
+    flex: 25;
+}
+.section-2 .container-1 .card-blue{
+    background-color: blue;
+    flex: 50;
+}
+.section-2 .container-1 .card-green{
+    background-color: green;
+    flex: 25;
+}
+
+@media only screen and (max-width:599px) {
+    .section-1 .container-1, .section-2 .container-1{
+        flex-direction:column;
+    }
+    .section-1 .container-1 .card, .section-2 .container-1 .card{
+        flex: none;
+    }
+}
